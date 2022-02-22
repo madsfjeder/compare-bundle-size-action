@@ -1,12 +1,14 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  base_path:
+    description: 'Path to base size file'
     required: true
-    default: 'World'
+  pr_path:
+    description: 'Path to PR size file'
+    required: true
 outputs:
-  time: # id of output
+  time:
     description: 'The time we greeted you'
 runs:
   using: 'node12'
