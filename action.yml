@@ -8,8 +8,12 @@ inputs:
     description: 'Path to PR size file'
     required: true
 outputs:
-  time:
-    description: 'The time we greeted you'
+  base_size:
+    description: 'Base bundle size'
+  pr_size:
+    description: 'PR bundle size'
+  percentDifference:
+    description: '% difference'
 runs:
   using: 'node12'
   main: 'index.js'
