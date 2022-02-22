@@ -12,6 +12,8 @@ outputs:
     description: 'Base bundle size'
   pr_size:
     description: 'PR bundle size'
+  diff:
+    description: 'Difference'
   percentDifference:
     description: '% difference'
 runs:
