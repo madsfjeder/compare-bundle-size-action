@@ -15,7 +15,7 @@ try {
 
   const base_path = core.getInput('base_path');
   const rawBase = fs.readFileSync(base_path + '/bundle_size.json');
-  const base = JSON.parse(base);
+  const base = JSON.parse(rawBase);
 
   console.log(base)
 
