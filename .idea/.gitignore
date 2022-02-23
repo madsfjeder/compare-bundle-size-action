@@ -3,3 +3,4 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+/compare-bundle-size-action.iml
