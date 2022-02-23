@@ -15,10 +15,10 @@ try {
   const diff = prInMb - baseInMb;
   const percentChange = (diff) / baseInMb * 100
 
-  core.setOutput("pr_size", prInMb.toPrecision(4));
-  core.setOutput("base_size", baseInMb.toPrecision(4));
+  core.setOutput("pr_size", prInMb.toPrecision(4)+'MB');
+  core.setOutput("base_size", baseInMb.toPrecision(4)+'MB');
   core.setOutput("percentDifference", percentChange.toPrecision(4));
-  core.setOutput('diff', (diff).toPrecision(4));
+  core.setOutput('diff', (diff).toPrecision(4)+'MB');
 } catch (error) {
   core.setFailed(error.message);
 }
