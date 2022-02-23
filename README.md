@@ -1,23 +1,20 @@
-# Hello world JavaScript action
+# Compare bundle size action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log. To learn how this action was built, see "[Creating a JavaScript action](https://help.github.com/en/articles/creating-a-javascript-action)" in the GitHub Help documentation.
+This actions compares bundle size of base branch and PR branch on PR push. 
 
 ## Inputs
 
-### `who-to-greet`
+### `base_path`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** Path to bundle_size artefact for base branch
+
+### `pr_path`
+
+**Required** Path to bundle_size artefact for PR branch
 
 ## Outputs
 
-### `time`
-
-The time we greeted you.
-
-## Example usage
-
-```yaml
-uses: actions/hello-world-javascript-action@main
-with:
-  who-to-greet: 'Mona the Octocat'
-```
+### `pr_size`
+### `base_size`
+### `percentDifference`
+### `diff`
