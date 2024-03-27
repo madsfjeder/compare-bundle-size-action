@@ -1,24 +1,24 @@
 {
-  "name": "hello-world-javascript-action",
+  "name": "compare-bundle-size-action",
   "version": "1.0.0",
-  "description": "This action prints \"Hello World\" or \"Hello\" + the name of a person to greet to the log.",
+  "description": "This action compares the size of an old + new bundle",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/hello-world-javascript-action.git"
+    "url": "git+https://github.com/madsfjeder/compare-bundle-size-action.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mads Fjederholt",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/actions/hello-world-javascript-action/issues"
+    "url": "https://github.com/madsfjeder/compare-bundle-size-action/issues"
   },
-  "homepage": "https://github.com/actions/hello-world-javascript-action#readme",
+  "homepage": "https://github.com/madsfjeder/compare-bundle-size-action#readme",
   "dependencies": {
-    "@actions/core": "^1.1.0",
+    "@actions/core": "^1.1.1",
     "@actions/github": "^1.1.0"
   }
 }
